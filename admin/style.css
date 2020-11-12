@@ -1,0 +1,411 @@
+body {
+    font-family: "Cambria";
+    padding: 0px;
+    margin: 0px;
+    color: #005555;
+    font-size: 14px;
+}
+
+#signin {
+    max-width: 350px;
+    margin: 150px auto;
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #005555;
+    text-align: center;
+}
+
+#signin img {
+    margin: -60px;
+    margin-left: -50px;
+    border-radius: 50%;
+}
+
+#signin h3 {
+    text-align: center;
+    color: #005555;
+    font-size: 24px;
+    padding-top: 60px;
+}
+
+#signin p {
+    text-align: center;
+    color: #005555;
+    font-size: 14px;
+}
+
+fieldset {
+    margin: 10px;
+    border: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select, textarea {
+    width: 90%;
+    padding: 0.8em;
+    margin-top: 1em;
+    border: 1px solid #005555;
+    background-color: #fff;
+    font-family: "Cambria";
+    font-size: 14px;
+    color: #005555;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: auto;
+    margin-top: 0.9em;
+    color: #fff;
+    background-color: #005555;
+    padding-top: 0.8em;
+    cursor: pointer;
+    border: 1px solid #005555;
+    font-family: "Cambria";
+    border-radius: 5ps;
+}
+
+.grid {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
+.dh1 {width: 8.33%;}
+.dh2 {width: 16.66%;}
+.dh3 {width: 24.99%;}
+.dh4 {width: 33.33%;}
+.dh5 {width: 41.66%;}
+.dh6 {width: 49.99%;}
+.dh7 {width: 58.33%;}
+.dh8 {width: 66.66%;}
+.dh9 {width: 74.99%;}
+.dh10 {width: 83.33%;}
+.dh11 {width: 91.66%;}
+.dh12 {width: 99.99%;}
+
+.dh1, .dh2, .dh3, .dh4, .dh5, .dh6, .dh7, .dh8, .dh9, .dh10, .dh11, .dh12 {
+    float: left;
+    display: inline;
+    margin: 0 0%;
+}
+
+@media screen and (max-width:720px) {
+    .dh1, .dh2, .dh3, .dh4, .dh5, .dh6, .dh7, .dh8, .dh9, .dh10, .dh11, .dh12 {
+        width: 100%;
+        margin-bottom: -1em;
+    }
+}
+
+/* MENU */
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #005555;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav img {
+    margin: 0px;
+    margin-left: 0px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.sidenav a {
+    padding: 4px 8px 4px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #87c287;
+}
+
+.sidenav h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: -30px;
+}
+
+.sidenav p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav hr {
+    border: 1px solid #cccccc;
+    width: 90%;
+    text-align: center;
+}
+
+@media screen and (max-height:450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* HEAD */
+.container1 {
+    background-color: #005555;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-family: "Cambria";
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.container1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container1 a:hover {
+    color: #87c287;
+}
+
+/* BODY */
+.container2 {
+    background-color: #fff;
+    margin-top: 70px;
+    padding: 20px;
+    font-family: "Cambria";
+    font-size: 14px;
+}
+
+.container2 h2 {
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* FOOT */
+.container3 {
+    background-color: #005555;
+    height: 20px;
+    width: 100%;
+    color: #fff;
+    font-family: "Cambria";
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#boxval {
+    max-width: 90%;
+    height: 100px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+    background-color: #005555;
+    border-radius: 5px;
+}
+
+#boxval p {
+    float: left;
+    color: #fff;
+    font-size: 22px;
+    margin: 35px;
+    margin-left: 30px;
+    font-family: "Century Gothic";
+}
+
+#boxval h3 {
+    float: right;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-family: "Arial";
+}
+
+/* Link */
+a {
+    color: #005555;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #87c287;
+}
+
+/* Button */
+.btn {
+    padding: 9px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: "Cambria";
+    font-size: 14pxs;
+    margin-top: 10px;
+    width: auto;
+}
+
+.btn-add {
+    color: #fff;
+    background-color: #005555;
+    cursor: pointer;
+}
+
+.btn-dis {
+    color: #fff;
+    background-color: #4e9a9a;
+}
+
+.btn-add:hover {
+    color: #fff;
+    background-color: #4e9a9a;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border: #ccc;
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+    background-color: #005555;
+    color: #fff;
+    font-family: "Cambria";
+    font-size: 14px;
+}
+
+td {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #005555;
+    vertical-align: top;
+}
+
+td big {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+td small{
+    font-size: 12px;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Card */
+.card {
+    margin: 17px;
+    min-height: 230px;
+    border: thin;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.cardhead {
+    padding: 10px;
+    background-color: #005555;
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 20px;
+}
+
+.cardbody {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    color: #005555;
+    min-height: 185px;
+    font-size: 14px;
+}
+
+.cardbody select {
+    width: 100px;
+    padding: 0.83em;
+    margin-top: 1em;
+    border: 1px solid #005555;
+    background-color: #fff;
+    font-family: "Cambria";
+    font-size: 14px;
+    color: #005555;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cardbody hr, .cardbody img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cardbody .badge {
+    width: 35px;
+    height: 23px;
+    border-radius: 7px;
+    float: right;
+    background-color: #005555;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.cardbody big {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardfoot {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+    color: #005555;
+    text-align: right;
+    min-height: 50px;
+}
+
+.box {
+    border: 1px solid #005555;
+    color: #005555;
+    padding: 4px 10px 5px;
+    font-size: 14px;
+    margin: 0 0px 0px 0;
+    font-weight: bold;
+}
+
+.box:hover{
+    background-color: #005555;
+    border: 1px solid #005555;
+    color: #fff;
+    padding: 4px 10px 5px;
+    font-size: 14px;
+    margin: 0 0px 0 0;
+    font-weight: bold;
+}
