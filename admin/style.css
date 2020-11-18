@@ -35,7 +35,7 @@ body {
     font-size: 14px;
 }
 
-fieldset {
+#signin fieldset {
     margin: 10px;
     border: none;
 }
@@ -218,6 +218,7 @@ input[type="submit"] {
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #boxval {
