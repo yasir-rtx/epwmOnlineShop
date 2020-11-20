@@ -1,12 +1,12 @@
 <div id="signin">
     <fieldset>
-        <img src="../foto/Profil.jpg" width="120px" alt="">
+        <img src="../foto/Profil.jpg" alt="" width="120px">
         <form name="form1" method="post" action="" enctype="multipart/form-data">
             <h3>ADMINISTRATOR</h3>
             <p>Please Login here...</p>
 
-            <input type="text" class="username" id="username" placeholder="Username">
-            <input type="password" id="password" class="password" placeholder="Password">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="password" id="password" name="password" placeholder="Password">
             <input type="submit" id="login" name="login" value="login as admin">
         </form>
 

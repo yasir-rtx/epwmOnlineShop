@@ -31,7 +31,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
         <img src="../foto/Profil.jpg" width="150px" alt="">
         <p>Welcome</p>
-        <h3><?php echo "$ra[namalengkap]"; ?></h3>
+        <h3><?php echo "$ra[name]"; ?></h3>
         <hr><a href="<?php echo "?p=home"; ?>">HOME</a>
         <hr><a href="<?php echo "?p=kategori"; ?>">KATEGORI</a>
         <hr><a href="<?php echo "?p=produk"; ?>">PRODUK</a>

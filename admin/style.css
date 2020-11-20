@@ -20,9 +20,9 @@ body {
 }
 
 #signin img {
-	padding-top: 20px;
-	margin: 5px;
+	margin: -60px;
 	border-radius: 50%;
+	border: 1px solid #550000;
 }
 
 #signin h3 {
