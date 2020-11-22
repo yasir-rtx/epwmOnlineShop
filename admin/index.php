@@ -56,6 +56,14 @@
                 <?php 
                     if ($_GET["p"] === "logout") {  
                         include "logout.php";
+                    } else if ($_GET["p"] == "kategori") {
+                        include "kategori.php";
+                    } else if ($_GET["p"] == "kategoriadd") {
+                        include "kategoriadd.php";
+                    } else if ($_GET["p"] == "kategoriedit") {
+                        include "kategoriedit.php";
+                    } else if ($_GET["p"] == "kategoridel") {
+                        include "kategoridel.php";
                     } else {
                         include "home.php";
                     }
