@@ -10,7 +10,7 @@
         $rowp = mysqli_num_rows($sqlp);
         echo "<div class='dh3'>";
         echo "<div class='card'>";
-        echo "<div class cardbody";
+        echo "<div class='cardbody'>";
         echo "<br>";
         echo "<hr><big>$rk[namakat]</big> <div class='badge'>$rowp</div>
               <hr>$rk[ketkat]
@@ -18,8 +18,8 @@
               <br>Oleh $ra[name]</i></small>";
         echo "</div>"; //Tutup cardbody
         echo "<div class='cardfoot'>";
-        echo "<br><a href='?p=kategoriedit&id=rk[id_kat]'><button type='button' class='btn btn-add'>EDIT</button></a> ";
-        echo "<a href='?p=kategoridel&id=rk[id_kat]'><button type='button' class='btn btn-add'>DELETE</button></a>";
+        echo "<br><a href='?p=kategoriedit&id=$rk[id_kat]'><button type='button' class='btn btn-add'>EDIT</button></a> ";
+        echo "<a href='?p=kategoridel&id=$rk[id_kat]'><button type='button' class='btn btn-add'>DELETE</button></a>";
         echo "</div>"; //Tutup kaki
         echo "</div>"; //tutup card
         echo "</div>"; //Tutup dh3

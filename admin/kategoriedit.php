@@ -1,23 +1,28 @@
+<?php 
+    $sqlk = mysqli_query($kon, "select * from kategori where id_kat='$_GET[id]'");
+    $rk = mysqli_fetch_array($sqlk);
+?>
 <a href="<?php echo "?p=kategori"; ?>"><button type="button" class="btn btn-add">KATEGORI</button></a>
-<button type="button" class="btn btn-dis">ADD KATEGORI</button>
+<button type="button" class="btn btn-dis">EDIT KATEGORI</button>
 <br>
 <div class="card">
-<div class="cardhead">ADD Kategori</div>
+<div class="cardhead">EDIT Kategori</div>
 <div class="cardbody" style="text-align:center;">
 
 <form name="form1" method="post" action="" enctype="multipart/form-data">
-    <input type="text" id="namakat" name="namakat" placeholder="Category Name">
-    <textarea name="ketkat" id="ketkat" placeholder="Keterangan Kategori"></textarea><br>
+    <input type="hidden" name="id_kat" value="<?php echo"$rk[id_kat]"; ?>">
+    <input type="text" id="namakat" name="namakat" placeholder="Category Name" value="<?php echo"$rk[namakat]"; ?>">
+    <textarea name="ketkat" id="ketkat" placeholder="Keterangan Kategori"><?php echo"$rk[ketkat]"; ?></textarea><br>
     <input type="submit" id="simpan" name="simpan" value="SIMPAN">
 </form>
 <br>
 <?php 
     if ($_POST["simpan"]) {
         if (!empty($_POST["namakat"]) and !empty($_POST["ketkat"])) {
-            $sqlk = mysqli_query($kon, "insert into kategori (id_admin, namakat, ketkat, tglkat) values ('$ra[id_admin]', '$_POST[namakat]', '$_POST[ketkat]', NOW())");
+            $sqlk = mysqli_query($kon, "update kategori set namakat='$_POST[namakat]', ketkat='$_POST[ketkat]' where id_kat='$_POST[id_kat]'");
 
             if($sqlk) {
-                echo "Data Berhasil Disimpan";
+                echo "Data Berhasil Diupdate";
             } else {
                 echo "Gagal Menyimpan";
             }
