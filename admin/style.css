@@ -225,7 +225,7 @@ input[type="submit"] {
 	font-size: 14px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	/* text-align: center; */
+	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
