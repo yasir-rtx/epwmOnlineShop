@@ -2,7 +2,7 @@
 <button type="button" class="btn btn-dis">ADD KATEGORI</button>
 <br>
 <div class="card">
-<div class="cardhead">ADD Kategori</div>
+<div class="cardhead">Add Kategori</div>
 <div class="cardbody" style="text-align:center;">
 
 <form name="form1" method="post" action="" enctype="multipart/form-data">

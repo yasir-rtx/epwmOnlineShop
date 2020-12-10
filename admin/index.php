@@ -74,6 +74,18 @@
                         include "produkdel.php";
                     } else if ($_GET["p"] == "produkdetail") {
                         include "produkdetail.php";
+                    } else if ($_GET["p"] == "jasakirim") {
+                        include "jasakirim.php";
+                    } else if ($_GET["p"] == "jasakirimadd") {
+                        include "jasakirimadd.php";
+                    } else if ($_GET["p"] == "jasakirimedit") {
+                        include "jasakirimedit.php";
+                    } else if ($_GET["p"] == "jasakirimdel") {
+                        include "jasakirimdel.php";
+                    } else if ($_GET["p"] == "anggota") {
+                        include "anggota.php";
+                    } else if ($_GET["p"] == "anggotadel") {
+                        include "anggotadel.php";
                     } else {
                         include "home.php";
                     }
