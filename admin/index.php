@@ -22,7 +22,7 @@
         <div class="dh12">
             <div class="container1">
                 <span style="font-size:20px; cursor:pointer; padding-right:15px;" onclick="openNav()">&#9776;</span>
-                <a href="<?php echo "?p=home"; ?>">epwm Online Shop Admin</a>
+                <a href="<?php echo "?p=home"; ?>">epwm Online Shop Administrator</a>
             </div>
         </div>
     </div>
