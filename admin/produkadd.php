@@ -29,7 +29,7 @@
 
 <?php 
     if ($_POST["simpan"]) {
-        if (!empty($_POST["id_kat"])) {
+        if (!empty($_POST["id_kat"]) AND !empty($_POST["nama"]) AND !empty($_POST["harga"])) {
             $nmfoto1 = $_FILES["foto1"]["name"];
             $lokfoto1 = $_FILES["foto1"]["tmp_name"];
             if (!empty($lokfoto1)) {
