@@ -29,7 +29,7 @@
 
 <?php 
     if ($_POST["simpan"]) {
-        if (!empty($_POST["id_kat"]) AND !empty($_POST["nama"]) AND !empty($_POST["harga"])) {
+        if (!empty($_POST["id_kat"]) AND !empty($_POST["nama"]) AND !empty($_POST["harga"]) AND !empty($_POST["stock"]) AND !empty($_POST["spesifikasi"]) AND !empty($_POST["detail"]) AND !empty($_POST["diskon"]) AND !empty($_POST["berat"]) AND !empty($_POST["isikotak"])) {
             $nmfoto1 = $_FILES["foto1"]["name"];
             $lokfoto1 = $_FILES["foto1"]["tmp_name"];
             if (!empty($lokfoto1)) {
