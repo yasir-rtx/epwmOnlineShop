@@ -50,10 +50,7 @@
 
             $detail = nl2br($_POST["detail"]);
 
-            $sqlj = mysqli_query($kon, "UPDATE jasakirim SET nama='$_POST[nama]',
-                detail='$detail'
-                $logo
-                tarif='$_POST[tarif]' WHERE id_jasa='$_POST[id_jasa]'");
+            $sqlj = mysqli_query($kon, "UPDATE jasakirim SET nama='$_POST[nama]', detail='$detail' $logo, tarif='$_POST[tarif]' WHERE id_jasa='$_POST[id_jasa]'");
 
             if ($sqlj) {
                 echo "DATA BERHASIL DISIMPAN";

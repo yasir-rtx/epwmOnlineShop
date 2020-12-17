@@ -7,10 +7,12 @@
         $tarif = number_format($rj["tarif"]);
         echo "<div class='dh3'>";
         echo "<div class='card'>";
+        echo "<div class='cardhead' align='center'><big>$rj[nama]</big></div>";
         echo "<div class='cardbody' style='text-align:center;'><br>";
         echo "<img src='../logojasa/$rj[logo]' border='0' width='200px' height='120px'>
         <hr>
-        <big>$rj[nama]</big>
+        $rj[detail]
+        <hr>
         <b>IDR $tarif</b>
         <hr>";
         echo "</div>";
