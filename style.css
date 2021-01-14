@@ -77,7 +77,7 @@ body {
 
 .container6 { /* Kaki */
 	background-color: #005555;
-	height: 150px auto;
+	height: 30px;
 	width: 100%;
 	color: #FFF;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -85,7 +85,8 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
-	margin-bottom: 10px;
+	line-height: 30px;
+	/* margin-bottom: 10px; */
 }
 
 #signin {

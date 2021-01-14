@@ -38,15 +38,21 @@
         </div>
     </div>
 
-    <?php 
-        include "home.php";
-        include "produkterbaru.php";
+    <?php
+        if ($_GET["p"] == "produkterbaru") {
+            include "produkterbaru.php";
+        } elseif ($_GET["p"] == "produkdetail") {
+            include "produkdetail.php";
+        } else {
+            include "home.php";
+            include "produkterbaru.php";
+        }
     ?>
 
     <div class="container6">
         <div class="grid">
             <div class="dh12">
-                <p>Copyright &copy; Prof. Muhammad Yasir, P.hd</p>
+                Copyright &copy; Prof. Muhammad Yasir, P.hd
             </div>
         </div>
     </div>
