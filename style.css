@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Cambria;
+	padding: 0px;
+	margin: 0px;
+	color: #005555;
+	font-size: 14px;
+}
+
+.container1 {
+	height: 12px;
+	padding: 10px;
+	color: #005555;
+	font-size: 12px;
+}
+
+.container2 {
+	height: 50px;
+	background-color: #005555;
+	color: #FFF;
+	font-size: 24px;
+}
+
+.container3 { /* Form Pencarian */
+	height: 65px;
+	background-color: #005555;
+	color: #FFF;
+	font-size: 24px;
+	text-align: center;
+}
+
+.container3 input[type="text"] {
+	width: 80%;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 14px;
+	color: #005555;
+	padding: 0.9em;
+	border: 1px solid #400080;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.container3 input[type="submit"]{
+	width: auto;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 14px;
+	background-color: #FF8000;
+	color: #FFF;
+	cursor: pointer;
+	padding: 0.8em;
+	border: 1px solid #FF8000;
+	border-radius: 5px;
+}
+
+.container4 {
+	height: auto;
+	background-color: #005555;
+	padding: 10px;
+}
+
+.container5 { /* Isi */
+	margin-top: 30px;
+	height: auto;
+	padding: 10px;
+	color: #005555;
+	font-size: 14px;
+}
+
+.container5 h2{
+	font-family: century gothic;
+	text-decoration: underline;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.container6 { /* Kaki */
+	background-color: #005555;
+	height: 150px auto;
+	width: 100%;
+	color: #FFF;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#signin {
+	max-width: 350px;
+	margin: 150px auto;
+	position: relative;
+	display: block;
+	background-color: #FFF;
+	box-shadow: 0 0 5px #005555;
+	text-align: center;
+}
+
+#signin img {
+	margin:-60px;
+	border-radius: 50%;
+	/* border: 1px solid #005555; */
+	box-shadow: 0 0 5px #005555;
+}
+
+#signin h3 {
+	text-align: center;
+	color: #005555;
+	font-size: 24px;
+	padding-top: 60px;
+}
+
+#signin p {
+	text-align: center;
+	color: #005555;
+	font-size: 14px;
+}
+
+fieldset {
+	margin: 10px;
+	border: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+	width: 90%;
+	padding: 0.8em;
+	margin-top: 1em;
+	border: 1px solid #005555;
+	background-color: #fff;
+	font-family: Cambria;
+	font-size: 14px;
+	color: #005555;
+	text-align: center;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	width: auto;
+	margin-top: 0.9em;
+	color: #FFF;
+	background-color: #005555;
+	padding: 0.8em;
+	cursor: pointer;
+	border: 1px solid #005555;
+	font-family: Cambria;
+	border-radius: 5px;
+}
+
+.grid {
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	overflow: hidden;
+}
+
+.dh1 {width: 8.33%;}
+.dh2 {width: 16.66%;}
+.dh3 {width: 24.99%;}
+.dh4 {width: 33.33%;}
+.dh5 {width: 41.66%;}
+.dh6 {width: 49.99%;}
+.dh7 {width: 58.33%;}
+.dh8 {width: 66.66%;}
+.dh9 {width: 74.99%;}
+.dh10 {width: 83.33%;}
+.dh11 {width: 91.66%;}
+.dh12 {width: 99.99%;}
+
+.dh1, .dh2, .dh3, .dh4, .dh5, .dh6, .dh7, .dh8, .dh9, .dh10, .dh11, .dh12 {
+	float: left;
+	display: inline;
+	margin: 0 0%;
+}
+
+@media screen and (max-width:720px) {
+	.dh1, .dh2, .dh3, .dh4, .dh5, .dh6, .dh7, .dh8, .dh9, .dh10, .dh11, .dh12 {
+		width: 100%;
+		margin-bottom: -1em;
+	}
+}
+
+/* Menu */
+.topnav {
+	overflow: hidden;
+	background-color: #005555;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #FFF;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.topnav a:hover {
+	background-color: #fff;
+	color: #005555;
+
+}
+
+.topnav a.pilih,
+.topnav a.pilih:hover {
+	color: #005555;
+	background-color: #FFF;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+@media screen and (max-width:720px) {
+	.topnav a.not(:first-child) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+		width: auto;
+	}
+}
+
+@media screen and (max-width:720px) {
+	.topnav.responsive {position: relative;}
+	.topnav.topnav.responsive .icon {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+	.topnav.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	} 
+}
+
+/* Link */
+a {color: #005555; text-decoration: none;}
+a:hover {color: #87C2C2;}
+
+/* Tombol */
+.btn {
+	padding: 9px 9px;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	font-family: Cambria;
+	font-size: 14px;
+	margin-top: 10px;
+	width: auto;
+}
+
+.btn-add {
+	color: #FFF;
+	background-color: #005555;
+	cursor: pointer;
+}
+
+.btn-add:hover {
+	background-color: #4E9A9A;
+}
+
+.btn-dis{
+	color: #FFF;
+	background-color: #4E9A9A;
+}
+
+.btn-x {
+	padding: 2px 2px;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 20px;
+	position: relative;
+	width: 30px;
+	color: #005555;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+/* Card */
+.card {
+	margin: 17px;
+	min-height: 230px;
+	border: thin;
+	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+	padding-bottom: 10px;
+}
+
+.cardhead {
+	padding: 10px;
+	background-color: #005555;
+	color: #FFF;
+	font-family: Century Gothic;
+	font-size: 20px;
+}
+
+.cardbody {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #fff;
+	color: #005555;
+	min-height: 185px;
+	font-size: 14px;
+}
+
+.cardbody select {
+	width: 100px;
+	padding: 0.8em;
+	margin-top: 1em;
+	border: 1px solid #005555;
+	background-color: #fff;
+	font-family: Cambria;
+	font-size: 14px;
+	color: #005555;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.cardbody hr, .cardbody img {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cardbody .badge {
+	width: 35px;
+	height: 23px;
+	border-radius: 7px;
+	float: right;
+	background-color: #005555;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.cardbody big {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.cardfoot {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #FFF;
+	color: #005555;
+	text-align: right;
+	min-height: 50px;
+}
+
+.box {
+	border: 1px solid #005555;
+	color: #005555;
+	padding: 4px 10px 5px;
+	font-size: 14px;
+	margin: 0 0px 0 0;
+	font-weight: bold;
+}
+
+.box:hover {
+	background-color: #005555;
+	border: 1px solid #005555;
+	color: #FFF;
+	padding: 4px 10px 5px;
+	font-size: 14px;
+	margin: 0 0px 0 0;
+	font-weight: bold;
+}
