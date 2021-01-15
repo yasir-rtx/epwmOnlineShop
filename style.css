@@ -77,11 +77,7 @@ body {
 
 .container6 { /* Kaki */
 	background-color: #005555;
-<<<<<<< HEAD
-	height: 150px auto;
-=======
 	height: 30px;
->>>>>>> member
 	width: 100%;
 	color: #FFF;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -89,12 +85,8 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
-<<<<<<< HEAD
-	margin-bottom: 10px;
-=======
 	line-height: 30px;
 	/* margin-bottom: 10px; */
->>>>>>> member
 }
 
 #signin {
@@ -312,6 +304,7 @@ a:hover {color: #87C2C2;}
 	color: #FFF;
 	font-family: Century Gothic;
 	font-size: 20px;
+	text-align: right;
 }
 
 .cardbody {
@@ -355,6 +348,18 @@ a:hover {color: #87C2C2;}
 .cardbody big {
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.cardbody .jmlbeli input[type="text"] {
+	width: 40px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #005555;
+	padding: 0.5em;
+	border: 1px solid #005555;
+	border-radius: 5px;
+	text-align: center;
 }
 
 .cardfoot {

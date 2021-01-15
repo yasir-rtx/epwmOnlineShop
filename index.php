@@ -37,6 +37,12 @@
             include "produkdetail.php";
         } elseif ($_GET["p"] == "keranjang") {
             include "keranjang.php";
+        } elseif ($_GET["p"] == "keranjangbelanja") {
+            include "keranjangbelanja.php";
+        } elseif ($_GET["p"] == "keranjangedit") {
+            include "keranjangedit.php";
+        } elseif ($_GET["p"] == "keranjangdel") {
+            include "keranjangdel.php";
         } elseif ($_GET["p"] == "register") {
             include "register.php";
         } elseif ($_GET["p"] == "login") {
