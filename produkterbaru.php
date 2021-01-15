@@ -81,7 +81,7 @@
 
             echo "<div class='dh12' align='right'>";
             echo "Halaman";
-            $sqlhal = mysqli_query($kon, "SELECT * FROM produk");
+            $sqlhal = mysqli_query($conn, "SELECT * FROM produk");
             $jmldata = mysqli_num_rows($sqlhal);
             $jmlhal = ceil($jmldata/$limit);
 

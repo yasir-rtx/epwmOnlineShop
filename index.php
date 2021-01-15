@@ -14,14 +14,6 @@
     <title>epwm Online Shop</title>
 </head>
 <body>
-    <!-- <div class="container1">
-        <div class="grid">
-            <div class="dh12">
-
-            </div>
-        </div>
-    </div> -->
-
     <?php 
         include "menu.php";
     ?>
@@ -43,6 +35,14 @@
             include "produkterbaru.php";
         } elseif ($_GET["p"] == "produkdetail") {
             include "produkdetail.php";
+        } elseif ($_GET["p"] == "keranjang") {
+            include "keranjang.php";
+        } elseif ($_GET["p"] == "register") {
+            include "register.php";
+        } elseif ($_GET["p"] == "login") {
+            include "login.php";
+        } elseif ($_GET["p"] == "logout") {
+            include "logout.php";
         } else {
             include "home.php";
             include "produkterbaru.php";

@@ -3,7 +3,7 @@
         <div class="topnav" id="myTopnav">
             <div class="dh6">
                 <a href="<?php echo "?p=beranda"; ?>">epwm OnlineShop</a>
-                <a href="javascript:void(0);" class="icon" style="font-size: 14px;" onclick="myFunction()">&#9776;</a>
+                <a href="javascript:void(0);" class="icon" style="font-size:14px;" onClick="myFunction()">&#9776;</a>
                 <?php 
                     if ($_GET["p"] == "beranda") {
                         $pilih = " class='pilih'";
