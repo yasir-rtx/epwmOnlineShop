@@ -88,6 +88,8 @@
                         include "anggotadel.php";
                     } else if ($_GET["p"] == "order") {
                         include "order.php";
+                    } else if ($_GET["p"] == "orderstatus") {
+                        include "orderstatus.php";
                     } else if ($_GET["p"] == "orderdetail") {
                         include "orderdetail.php";
                     } else {

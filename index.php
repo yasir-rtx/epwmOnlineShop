@@ -43,9 +43,19 @@
             include "keranjangedit.php";
         } elseif ($_GET["p"] == "keranjangdel") {
             include "keranjangdel.php";
+        } elseif ($_GET["p"] == "selesaibelanja") {
+            include "selesaibelanja.php";
+        } elseif ($_GET["p"] == "selesaibelanjaaksi") {
+            include "selesaibelanjaaksi.php";
+        } elseif ($_GET["p"] == "riwayat") {
+            include "riwayat.php";
+        } elseif ($_GET["p"] == "konfirmasi") {
+            include "konfirmasi.php";
+        } elseif ($_GET["p"] == "logout") {
+            include "logout.php";
         } elseif ($_GET["p"] == "register") {
             include "register.php";
-        } elseif ($_GET["p"] == "login") {
+        } elseif ($_GET["p"] == "login") { 
             include "login.php";
         } elseif ($_GET["p"] == "logout") {
             include "logout.php";

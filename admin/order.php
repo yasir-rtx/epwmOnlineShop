@@ -19,21 +19,38 @@
     if ($_GET["st"] == "Semua") {
         $status = "";
     } else {
-        $status = "WHERE statusorder='$_GEt[st]'";
+        $status = "WHERE statusorder='$_GET[st]'";
     }
 
-    $sqlo = mysqli_query($kon, "SELECT * FROM orders $$status ORDER BY tglorder DESC");
+    $sqlo = mysqli_query($kon, "SELECT * FROM orders $status ORDER BY tglorder DESC");
     $no = 1;
     while ($ro = mysqli_fetch_array($sqlo)) {
         if ($ro["statusorder"] == "Baru") {
-            $pilb = " selected"; $pill = ""; $pilk = ""; $pilt = "";
+            $pilb = " selected"; 
+            $pill = ""; 
+            $pilk = ""; 
+            $pilt = "";
         } else if ($ro["statusorder"] == "Lunas") {
-            $pilb = ""; $pill = " selected"; $pilk = ""; $pilt = "";
+            $pilb = ""; 
+            $pill = " selected"; 
+            $pilk = ""; 
+            $pilt = "";
         } else if ($ro["statusorder"] == "Dikirim") {
-            $pilb = ""; $pill = ""; $pilk = " selected"; $pilt = "";
+            $pilb = ""; 
+            $pill = ""; 
+            $pilk = " selected"; 
+            $pilt = "";
         } else if ($ro["statusorder"] == "Diterima") {
-            $pilb = ""; $pill = ""; $pilk = ""; $pilt = " selected";
+            $pilb = ""; 
+            $pill = ""; 
+            $pilk = ""; 
+            $pilt = " selected";
         }
+        // var_dump($pilb);echo "<br>";
+        // var_dump($pill);echo "<br>";
+        // var_dump($pilk);echo "<br>";
+        // var_dump($pilt);echo "<br>";
+        // exit;
 
         $sqlod = mysqli_query($kon, "SELECT * FROM orders WHERE id_order='$ro[id_order]'");
         $rod = mysqli_fetch_array($sqlod);
@@ -94,7 +111,7 @@
         if ($rowbyr > 0) {
             echo "<table width='100%' border='0'>";
             echo "<tr>";
-            echo "<td width='100px'><a href='../buktibayar/$rbyr[bukti]' target='_blank'><img src='../fotobayar/$rbyr[bukti]' width='100px'></a></td>";
+            echo "<td width='100px'><a href='../buktibayar/$rbyr[bukti]' target='_blank'><img src='../buktibayar/$rbyr[bukti]' width='100px'></a></td>";
             echo "<td>Ditransfer oleh : <br><b>$rbyr[namapengirim]</b><br>
                     dari <b>$rbyr[namabankpengirim]</b><br>
                     ke <b>$rbyr[namabankpenerima]</b><br>
@@ -109,14 +126,17 @@
         echo "<input type='hidden' name'st' value='$_GET[st]'>";
         echo "<select name='statusorder'>";
         echo "<option value='Baru' $pilb>Baru</option>";
-        echo "<option value='Lunas' $pilb>Lunas</option>";
-        echo "<option value='Dikirim' $pilb>Dikirim</option>";
-        echo "<option value='Diterima' $pilb>Diterima</option>";
+        echo "<option value='Lunas' $pill>Lunas</option>";
+        echo "<option value='Dikirim' $pilk>Dikirim</option>";
+        echo "<option value='Diterima' $pilt>Diterima</option>";
         echo "</select>";
         echo "<input type='submit' value='Ubah Status Pesanan'>";
+        echo "<br>";
+        // var_dump($ro["id_order"]);echo "<br>";
+        // var_dump($_GET["st"]);echo "<br>";exit;
         echo "</form><br>";
 
-        $total = number_format($ro[total]);
+        $total = number_format($ro["total"]);
         echo "</div>";
         echo "<div class='cardhead'>Total : IDR $total</div>";
         echo "</div><br>";

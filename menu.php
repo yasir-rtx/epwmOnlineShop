@@ -25,18 +25,18 @@
                 ?>
             </div>
             <div class="dh6">
-                    <?php 
-                        if (!empty($_SESSION["userag"]) && !empty($_SESSION["passag"])) {
-                            echo "<a><b>$rag[nama]</b></a>";
-                            echo "<a href='?p=konfirmasi&idag=$rag[id_anggota]'>Konfirmasi</a>";
-                            echo "<a href='?p=riwayat&idag=$rag[id_anggota]'>Riwayat</a>";
-                            echo "<a href='?p=keranjangbelanja&idag=$rag[id_anggota]'>Keranjang Belanja</a>";
-                            echo "<a href='?p=logout&idag=$rag[id_anggota]'>Logout</a>";
-                        } else {
-                            echo "<a href='?p=register'>Register</a>";
-                            echo "<a href='?p=login'>Login</a>";
-                        }
-                    ?>
+                <?php 
+                    if (!empty($_SESSION["userag"]) && !empty($_SESSION["passag"])) {
+                        echo "<a><b>$rag[nama]</b></a>";
+                        echo "<a href='?p=konfirmasi&idag=$rag[id_anggota]'>Konfirmasi</a>";
+                        echo "<a href='?p=riwayat&idag=$rag[id_anggota]'>Riwayat</a>";
+                        echo "<a href='?p=keranjangbelanja&idag=$rag[id_anggota]'>Keranjang Belanja</a>";
+                        echo "<a href='?p=logout&idag=$rag[id_anggota]'>Logout</a>";
+                    } else {
+                        echo "<a href='?p=register'>Register</a>";
+                        echo "<a href='?p=login'>Login</a>";
+                    }
+                ?>
             </div>
         </div>
 

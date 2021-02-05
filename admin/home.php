@@ -170,7 +170,7 @@
                 ?>
             </div>
             <div class="cardfoot">
-                <a href="<?php echo "?p=order"; ?>"><button class="btn btn-add">Lihat Semua Order &raquo;</button></a>
+                <a href="<?php echo "?p=order&st=Semua"; ?>"><button class="btn btn-add">Lihat Semua Order &raquo;</button></a>
             </div>
         </div>
         <br>

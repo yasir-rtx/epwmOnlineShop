@@ -317,7 +317,7 @@ a:hover {color: #87C2C2;}
 }
 
 .cardbody select {
-	width: 100px;
+	width: 90%;
 	padding: 0.8em;
 	margin-top: 1em;
 	border: 1px solid #005555;

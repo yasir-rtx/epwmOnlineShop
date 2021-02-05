@@ -48,6 +48,7 @@
                 echo "DATA GAGAL DISIMPAN";
             }
             echo "<META HTTP-EQUIV='Refresh' Content='1; URL=?p=jasakirim'>";
+            
         } else {
             echo "DATA HARUS DIISI DENGAN LENGKAP";
         }
