@@ -1,8 +1,9 @@
 <?php 
-    var_dump($_POST["statusorder"]);echo "<br>";
-    var_dump($_POST["id_order"]);echo "<br>";
-    exit;
-    $sqlo = mysqli_query($kon, "UPDATE orders SET statusorder='$_POST[statusorder]' WHERE id_order='$_POST[id_order]'");
+    $id = $_GET["id"];
+    // var_dump($_POST["statusorder"]);echo "<br>";
+    // var_dump($id);echo "<br>";
+    // exit;
+    $sqlo = mysqli_query($kon, "UPDATE orders SET statusorder='$_POST[statusorder]' WHERE id_order='$id'");
 
     if ($sqlo) {
         echo "STATUS BERHASIL DIUBAH";

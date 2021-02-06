@@ -121,8 +121,8 @@
             echo "</table>";
         }
 
-        echo "<form method='post' action='?p=orderstatus' enctype='multipart/form-data'>";
-        echo "<input type='hidden' name'id_order' value='$ro[id_order]'>";
+        echo "<form method='post' action='?p=orderstatus&id=$ro[id_order]' enctype='multipart/form-data'>";
+        echo "<input type='hidden' name'idorder' value='$ro[id_order]'>";
         echo "<input type='hidden' name'st' value='$_GET[st]'>";
         echo "<select name='statusorder'>";
         echo "<option value='Baru' $pilb>Baru</option>";
