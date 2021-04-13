@@ -5,7 +5,7 @@
             <div class="dh12">
                 <input type="hidden" name="p" placeholder="" value="<?php echo "$_GET[p]"; ?>">
                 <input type="hidden" name="idag" placeholder="" value="<?php echo "$$_GET[idag]"; ?>">
-                <input type="text" name="noorder" placeholder="Masukan nomor order (tanpa #)" value="<?php echo "$$_GET[noorder]"; ?>">
+                <input type="text" name="noorder" placeholder="Masukan nomor order (tanpa #)" value="<?php echo "$_GET[noorder]"; ?>">
                 <br>
                 <input type="submit" name="submit" placeholder="" value="Cari No. order">
             </div>
